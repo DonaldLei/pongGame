@@ -1,4 +1,3 @@
-
 let playerX=8;playerY=350;
 let ballX=400;ballY=350;
 let xSpeed=3;ySpeed=3;
