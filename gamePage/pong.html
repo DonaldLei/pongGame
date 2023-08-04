@@ -2,14 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href=""> -->
     <title>Pong Game</title>
   </head>
   <body>
-    <!-- <nav>
-      <a href=""><div>About</div></a>
-      <a href=""><div>Play Game</div></nav></a>
-      <div>Credits</div>
-    </nav> -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"
@@ -17,29 +13,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="sketch.js"></script>
-    <!-- <script src ="style.css"></script> -->
     
-<p id = "difficulty-message">
-    Pick a difficulity before starting.
-</p> 
-    <!--buttons for difficulties-->
-    <div class = "buttonsForDifficulties">
-        <button id = "easy">Easy</button>
-        <button id = "medium">Medium</button>
-        <button id = "hard">Hard</button>
+    <!-- choosing a difficulty -->
+    <div id="difficulty-message">
+        <p>Pick a difficulity before starting.</p> 
+        <div class = "buttonsForDifficulties">
+            <button id = "easy">Easy</button>
+            <button id = "medium">Medium</button>
+            <button id = "hard">Hard</button>
+            <a href="../index.html"><button id="returnHOME">Homepage</button></a>
+        </div>
     </div>
-
-    <button id = "restart">Restart</button>
-    
-    
-    <div id="returnHOME">
-        <a href="../index.html" id="homeBTN"><h1>Return to Homepage</h1></a>
+    <!-- <button id = "restart">Restart</button> -->
+    <div id='other-buttons'>
+        <a href="../index.html"><button>Homepage</button></a>
+        <button onClick="window.location.reload()">Restart</button>
     </div>
     <script>
-        hideHomeBTN();
+        let otherBTN=document.getElementById('other-buttons');
+        otherBTN.style.visibility='hidden';
     </script>
 
+
+    <div id="game">
+        <script src="sketch.js"></script>
+    </div>
 
 
 </body>
