@@ -1,8 +1,13 @@
-nav {
-    background-color: black;
+body{
+    background-color: #222;
+    color:white;
+}
+nav{
+    background-color: #222;
     padding: 5px;
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
 }
 .heading {
     text-align: center;
@@ -16,6 +21,7 @@ p {
     color: white;
     font-size: 28px;
     padding: 5px;
+    border-radius: 15px;
 }
 .item:hover {
     background: grey;
@@ -31,10 +37,4 @@ a {
     display:flex;
     justify-content: center;
     
-}
-.about {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
