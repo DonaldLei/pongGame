@@ -21,6 +21,7 @@ p {
     color: white;
     font-size: 28px;
     padding: 5px;
+    border-radius: 15px;
 }
 .item:hover {
     background: grey;
